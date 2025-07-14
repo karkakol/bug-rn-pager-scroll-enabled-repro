@@ -10,9 +10,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <PagerView 
-      style={{flex: 1}} 
-      scrollEnabled={false}>
+      <PagerView style={{flex: 1}} scrollEnabled={false}>
         {["red", "green", "blue"].map((color ) =>{
           const style ={backgroundColor: color, flex: 1}
           return (
